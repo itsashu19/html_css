@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* color variables */
+:root {
+  --dark: #2c2c34;
+  --semi-dark: #494850;
+  --bt-color: #978897;
+  --semi-light: #b18fcf;
+  --light: #d8d8f6;
+}
+body {
+  height: 100vh;
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+}
+/* navbar */
+.sidenav {
+  height: 100vh;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.sidenav a {
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  display: block;
+}
+.sidenav a:hover {
+  background-color: #575757;
+}
+.main-content {
+  margin-left: 250px; /* Same as the width of the sidenav */
+}
+
+/* searchbar */
+.searchbar {
+  height: 4rem;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+.searchbar input {
+  padding: 5px 10px;
+  width: 350px;
+  border-radius: 10px;
+}
+.searchbar .searchbox {
+  position: relative;
+  margin: auto;
+}
+.searchbar .searchbox .search-icon {
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.bell img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #000;
+}
+
+/* hero container */
+.hero-container {
+  background-color: var(--light);
+  height: 100vh;
+}
