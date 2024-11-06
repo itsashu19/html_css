@@ -4,54 +4,120 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Landing Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Admin Panel</title>
   </head>
   <body>
-    <!-- Starting Page Navbar  -->
-    <navbar class="sidenav">
-      <a href="#home">Dashboard</a>
-      <a href="#services">Projects</a>
-      <a href="#clients">Customers</a>
-      <a href="#contact">Contact Us</a>
-    </navbar>
-
-    <div class="main-content">
-      <!--search bar and avatar -->
-      <navbar class="searchbar">
-        <div class="searchbox">
-          <input type="text" placeholder="Search..." />
-          <span class="search-icon">&#128269;</span>
+    <div class="container">
+      <div class="topbar">
+        <div class="logo">
+          <h2>Logo.</h2>
         </div>
-        <div>
-          <span class="bell"
-            ><img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhBJREFUSEvt1kvITVEUwPHflzKT18CUFGWA5FHkVSgZGCjlUUSZyFCKMkHKEBlIFDKQlJLkEUpChBETBkZS5DGT11lf+9bpuvecs8/31Z1Yk9M5e6/1P3u99hoyIBkaEFdb8HjsST99Al9zD9AGPBGPMSPBXmMRvufAc8ATcAA7EfCyfMJZHMa3Jj/QFLwZxzG5xuhH7MK1OngT8H4cKRl6gbt4nr7Nx2rMLu3ZjVNV8DrwKtxOBj5jC272MbgeFzAurS/As37wKnCsvUlJ9CMl0MsaFy7DfYar5WHhmaVtwOtwPSkexKG6uKX1kwhXh8xDhOYfqTpxJFPU6q8isSY1zVbMTJ4K2D4cywXfwFq8wtyGp+1s+4ApOI9tueB7RbxW4EF65rAjvktwJ2V8lqsjSZa3BNfqVsW4VrnCBbW6/8Ed70UXuoyxqXOtycks3EpJFY1nY6/e3cvVW1MZdNY2FH34aiY4dK4knegD23GxbKMbPA3v0oaf2FQykMkePumlouONwR9MxfuOkW5w1G3Ub8gOnMulde2Pu/tM+rYy9fHh1ypwdKwvIwTH8DCnCXhh0SafjBDWTz3Go6f9XB3xOF3cq9NHGf42TSaRaD1dPcq8/ubqJpBuzbilYqoIz5Tld7p7Iy8aSS44jMb9urfL+lHEbNZY2oDD+KyiOy1O9fkIMVtnSVtwFqTX5oGB/wLg3mEfxrQ97AAAAABJRU5ErkJggg=="
-          /></span>
+        <div class="search">
+          <input type="text" placeholder="Search.." />
+          <label for="search"> <i class="fas fa-search"></i></label>
+        </div>
+        <i class="fas fa-bell"></i>
+        <div class="user">
           <img
-            class="avatar"
-            src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-            alt="avatar"
-            srcset=""
+            src="https://png.pngtree.com/png-vector/20191101/ourmid/pngtree-cartoon-color-simple-male-avatar-png-image_1934459.jpg"
+            alt=""
           />
         </div>
-      </navbar>
+      </div>
 
-      <!-- Header Hero Section  -->
-      <header class="hero-container"></header>
+      <!--side bar -->>
+      <div class="sidebar">
+        <ul>
+          <li>
+            <a href="/">
+              <i class="fas fa-th-large"></i>
+              <div>Dashboard</div>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <i class="fas fa-user-graduate"></i>
+              <div>Projects</div>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <i class="fas fa-th-large"></i>
+              <div>Customers</div>
+            </a>
+          </li>
+          <li>
+            <a href="/">
+              <i class="fas fa-th-large"></i>
+              <div>Contact Us</div>
+            </a>
+          </li>
+        </ul>
+      </div>
 
-      <!-- Product Overview  -->
-      <main class="product-container"></main>
+      <!-- main starts from here -->
+      <div class="main">
+        <div class="cards">
+          <div class="card">
+            <div class="card-content">
+              <div class="number">1217</div>
+              <div class="card-name">Projects</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">1217</div>
+              <div class="card-name">Projects</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">1217</div>
+              <div class="card-name">Projects</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-content">
+              <div class="number">1217</div>
+              <div class="card-name">Projects</div>
+            </div>
+            <div class="icon-box">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+          </div>
+        </div>
 
-      <!-- Carasoul Page for the product  -->
-      <section class="cara-container"></section>
-
-      <!-- Testimonial  -->
-      <section class="testmoni-container"></section>
-      <!-- Why US  -->
-
-      <section class="us-container"></section>
-      <!-- Footer Page  -->
-      <footer class="footer-container"></footer>
+        <!-- charts start here -->
+        <div class="charts">
+          <div class="chart">
+            <h2>Earnings(total 1 year)</h2>
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="chart">
+            <h2>Employees</h2>
+            <canvas id="doughnut"></canvas>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
   </body>
 </html>
