@@ -36,25 +36,25 @@
       <div class="sidebar">
         <ul>
           <li>
-            <a href="/">
+            <a href="#dashboard">
               <i class="fas fa-th-large"></i>
               <div>Dashboard</div>
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="#projects">
               <i class="fas fa-user-graduate"></i>
               <div>Projects</div>
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="#testimonilas">
               <i class="fas fa-th-large"></i>
               <div>Customers</div>
             </a>
           </li>
           <li>
-            <a href="/">
+            <a href="#contact-us">
               <i class="fas fa-th-large"></i>
               <div>Contact Us</div>
             </a>
@@ -65,7 +65,7 @@
       <!-- main starts from here -->
       <div class="main">
         <!-- Dashboard Page starts here  -->
-        <div class="dashboard">
+        <section id="dashboard">
           <div class="cards">
             <div class="card">
               <div class="card-content">
@@ -116,34 +116,28 @@
               <canvas id="doughnut"></canvas>
             </div>
           </div>
-        </div>
-        <!-- Main Page -->
-        <div class="banner-page">
-          <div class="banner-content">
-            <h1>Design your Products</h1>
-            <p>Easy way to navigate and design the products</p>
-            <div class="banner-buttons">
-              <button>Watch More</button>
-              <button>Read More</button>
-            </div>
-          </div>
-        </div>
+        </section>
+
         <!-- Projects Page Starts Here  -->
-        <div class="projects">
+        <section id="projects">
           <div class="img-container">
-            <img
-              src="https://images.unsplash.com/photo-1721332150382-d4114ee27eff?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="img"
-            />
-            <div class="img-buttons">
-              <button>Prev</button>
-              <button>Next</button>
-            </div>
+            <img src="https://picsum.photos/1000/500" class="slide" alt="" />
+            <img src="https://picsum.photos/100/500" class="slide" alt="" />
+            <img src="https://picsum.photos/1000/500" class="slide" alt="" />
+            <img src="https://picsum.photos/1000/500" class="slide" alt="" />
           </div>
-        </div>
+          <div class="img-buttons">
+            <button onclick="goPrev()">
+              <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button onclick="goNext()">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </section>
 
         <!--testimonials  -->
-        <div class="testimonilas">
+        <section id="testimonilas">
           <div class="testimonial-container">
             <h1>What Our <span style="color: teal">Clients</span> Say</h1>
             <div class="testimonial-tile">
@@ -179,25 +173,53 @@
               </p>
             </div>
           </div>
-        </div>
+        </section>
         <!--  -->
-        <div class="contact-us">
+        <section id="contact-us">
           <div class="content">
-            <div class="contact-tile">
-              <h2>Contact Us</h2>
-              <p>
-                We would love to hear from you! Please reach out with any
-                questions, comments, or feedback.
-              </p>
-              <button>Contact Us</button>
+            <div class="contact-container">
+              <h1>Contact Us</h1>
+              <div class="contact-info">
+                <div class="contact-tile">
+                  <h2>Our Address</h2>
+                  <p>123 Main Street<br />City, Country 12345</p>
+                </div>
+                <div class="contact-tile">
+                  <h2>Email Us</h2>
+                  <p><a href="mailto:info@company.com">info@company.com</a></p>
+                </div>
+                <div class="contact-tile">
+                  <h2>Call Us</h2>
+                  <p>+1 234 567 890</p>
+                </div>
+              </div>
+              <form class="contact-form">
+                <h2>Send Us a Message</h2>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required />
+                <label for="mobile">Mobile No</label>
+                <input type="text" id="mobile" name="mobile" required />
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                ></textarea>
+                <button type="submit">Submit</button>
+              </form>
+              <p id="error-message" style="color: red"></p>
             </div>
           </div>
           <footer><p>&copy; 2024 Your Company. All Rights Reserved.</p></footer>
-        </div>
+        </section>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="chart1.js"></script>
     <script src="chart2.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
